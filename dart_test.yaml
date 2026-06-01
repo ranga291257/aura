@@ -1,0 +1,3 @@
+# On some network/slow mounts, parallel test discovery can finish before all
+# test files are found. Serial execution ensures all 6 unit tests run.
+concurrency: 1

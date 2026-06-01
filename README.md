@@ -48,7 +48,7 @@ All paths use the same Vedic engine and UI. Profile data stays **on the device**
 
 - [Flutter](https://docs.flutter.dev/get-started/install) **3.19+** / Dart **3.0+**
 - **Android:** Android SDK **21+**, device or emulator  
-- **iOS:** **macOS**, Xcode **15+**, iOS **14+** (cannot build iOS on Linux/Windows)  
+- **iOS:** **macOS**, Xcode **15+**, iOS **13+** (cannot build iOS on Linux/Windows)  
 - **Docker (optional):** [Docker Engine](https://docs.docker.com/get-docker/) 20+ or Docker Desktop  
 
 Clone and install dependencies:
@@ -247,9 +247,9 @@ The chart needs **latitude, longitude, and timezone**; city is the usual approxi
 
 The app uses WorkManager polling (every 15 min, 5–10 AM window) by default. For the full Google Sleep API:
 
-1. Add to `android/app/build.gradle`:
-   ```groovy
-   implementation 'com.google.android.gms:play-services-location:21.2.0'
+1. Add to `android/app/build.gradle.kts` inside `dependencies { }`:
+   ```kotlin
+   implementation("com.google.android.gms:play-services-location:21.2.0")
    ```
 
 2. In `MainActivity.kt`, register a sleep segment receiver:

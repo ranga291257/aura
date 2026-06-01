@@ -13,7 +13,7 @@ import 'storage_service.dart';
 /// Notification Service
 ///
 /// Sleep detection approach:
-///  • Android: WorkManager periodic task runs every 15 min between 4–10 AM.
+///  • Android: WorkManager periodic task runs every 15 min; card fires 5–10 AM.
 ///    It checks if the user has been still (via Step Counter / accelerometer
 ///    inactivity heuristic) — a proxy for sleep detection when the full
 ///    Google Sleep API requires Google Play Services integration.

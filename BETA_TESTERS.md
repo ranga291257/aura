@@ -60,7 +60,7 @@ flutter run -d ios
 
 Allow notifications when asked. Background delivery depends on iOS scheduling (not a fixed alarm time).
 
-Optional: **[ios/Aura_iPhone_Setup_Guide.docx](ios/Aura_iPhone_Setup_Guide.docx)** (Xcode / Simulator checklist).
+For signing and Simulator setup, see **[README.md — iOS](README.md#ios)**.
 
 ---
 
