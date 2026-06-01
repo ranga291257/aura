@@ -321,6 +321,7 @@ docker-compose.yml                Local demo on port 8080
 |----------|----------|
 | [BETA_TESTERS.md](BETA_TESTERS.md) | Beta testers — quick start, feedback |
 | [docs/FUNCTIONAL_SPEC.md](docs/FUNCTIONAL_SPEC.md) | Developers — reverse-engineered offline engine (planet math → mood → quote) |
+| [docs/PROJECT_STRUCTURE.md](docs/PROJECT_STRUCTURE.md) | Folder map — what to edit vs Flutter boilerplate |
 
 ---
 

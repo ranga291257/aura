@@ -275,9 +275,7 @@ class AstrologyService {
     String startingLord = nakshatraLords[nakshatraIdx];
     int startingIdx = dashaSequence.indexOf(startingLord);
 
-    // Total years from birth represented by the accumulated dasha
     double daysPerYear = 365.25;
-    double totalDashaYears = 120.0;
 
     // Build cumulative dasha timeline from birth
     double birthJD = julianDay(profile.dateOfBirth);
@@ -377,8 +375,7 @@ class AstrologyService {
     final satLon = toSidereal(saturnLongitude(now), now);
     final mercLon = toSidereal(mercuryLongitude(now), now);
     final venusLon = toSidereal(venusLongitude(now), now);
-    final rahuLon = toSidereal(rahuLongitude(now), now);
-    final ketuLon = norm360(rahuLon + 180.0);
+    // Rahu/Ketu computed when needed for future chart UI (Ketu = Rahu + 180°).
 
     // Natal Moon (from birth chart)
     final birthUtc = _toBirthUtc(profile);

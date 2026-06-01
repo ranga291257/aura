@@ -325,6 +325,7 @@ function buildDailyCard(profile, clock):
 
 - **[README.md](../README.md)** — install, Docker, Android/iOS, architecture overview.
 - **[BETA_TESTERS.md](../BETA_TESTERS.md)** — how to try the beta and give feedback.
+- **[PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md)** — directory layout and what each folder is for.
 
 ---
 

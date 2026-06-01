@@ -9,7 +9,6 @@ class StorageService {
   static const String _profileKey = 'user_profile';
   static const String _onboardedKey = 'is_onboarded';
   static const String _lastCardDateKey = 'last_card_date';
-  static const String _sleepEnabledKey = 'sleep_detection_enabled';
 
   static SharedPreferences? _prefs;
 
@@ -89,16 +88,7 @@ class StorageService {
     return last == '${now.year}-${now.month}-${now.day}';
   }
 
-  static Future<bool> isSleepDetectionEnabled() async {
-    final prefs = await _preferences();
-    return prefs.getBool(_sleepEnabledKey) ?? true;
-  }
-
-  static Future<void> setSleepDetectionEnabled(bool value) async {
-    final prefs = await _preferences();
-    await prefs.setBool(_sleepEnabledKey, value);
-  }
-
+  /// Clears profile and vault (e.g. debug / reset onboarding).
   static Future<void> clearAll() async {
     final prefs = await _preferences();
     await prefs.clear();
