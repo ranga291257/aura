@@ -1,5 +1,7 @@
 # Aura — Your Daily Cosmic Guide
 
+**One name everywhere:** local folder `aura`, Git remote `github.com/ranga291257/aura`.
+
 [![Beta](https://img.shields.io/badge/status-beta-orange)](BETA_TESTERS.md)
 
 A fully **offline** Flutter app for **Android** and **iOS** that delivers a personalized spiritual morning card each day, driven by **Vedic astrology** (Parashari + KP, Lahiri ayanamsa). No internet, no servers.
