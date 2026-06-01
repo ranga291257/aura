@@ -103,4 +103,9 @@ Do **not** post your full birth date or name in public issues if you prefer priv
 
 ## Full documentation
 
-See **[README.md](README.md)** for architecture, privacy, Android/iOS details, and optional sleep API upgrades.
+| Doc | What it covers |
+|-----|----------------|
+| **[README.md](README.md)** | Install, Docker, Android/iOS, architecture, privacy |
+| **[docs/FUNCTIONAL_SPEC.md](docs/FUNCTIONAL_SPEC.md)** | How offline “stars → mood → quote” works (first principles, no astrology jargon required) |
+
+**Already cloned?** Pull the latest: `git pull` in your `aura` folder. Docker users: `docker compose up --build` again. An installed APK does not auto-update from GitHub — rebuild or install a new APK.

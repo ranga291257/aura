@@ -10,6 +10,8 @@ You can also run a **browser preview** on Linux/macOS/Windows via Flutter or **D
 
 **Beta testers:** start with **[BETA_TESTERS.md](BETA_TESTERS.md)** (Docker quick start, APK, feedback).
 
+**How it works (no astrology background needed):** **[docs/FUNCTIONAL_SPEC.md](docs/FUNCTIONAL_SPEC.md)** — first-principles functional spec of the offline sky math, mood engine, and quotes (for developers and students).
+
 ```bash
 git clone https://github.com/ranga291257/aura.git
 cd aura
@@ -313,9 +315,18 @@ docker-compose.yml                Local demo on port 8080
 
 ---
 
+## Documentation
+
+| Document | Audience |
+|----------|----------|
+| [BETA_TESTERS.md](BETA_TESTERS.md) | Beta testers — quick start, feedback |
+| [docs/FUNCTIONAL_SPEC.md](docs/FUNCTIONAL_SPEC.md) | Developers — reverse-engineered offline engine (planet math → mood → quote) |
+
+---
+
 ## Astrology Engine
 
-Planet positions are computed using truncated VSOP87 / Meeus algorithms:
+Planet positions are computed using truncated VSOP87 / Meeus algorithms (see [FUNCTIONAL_SPEC.md](docs/FUNCTIONAL_SPEC.md) for the full pipeline):
 
 | Body | Accuracy | Method |
 |---|---|---|
