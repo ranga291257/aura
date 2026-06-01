@@ -1,0 +1,47 @@
+name: Beta bug report
+description: Report a problem during Aura beta testing
+title: "[Beta] "
+labels: ["beta"]
+body:
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Android (device)
+        - Android (emulator)
+        - iOS (Simulator / device)
+        - Docker / web browser
+        - Linux desktop
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version or git commit
+      placeholder: e.g. 1.0.0+1 or commit sha
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: 1. Open app 2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
+      description: Screenshots, device model, OS version. Avoid posting full birth details.
